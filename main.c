@@ -140,8 +140,8 @@ static void usage()
 
 static void setTimeout(int ms)
 {
-    nextTimeout.tv_sec = ms / 1000;
-    nextTimeout.tv_usec = (ms % 1000) * 1000;
+	nextTimeout.tv_sec = ms / 1000;
+	nextTimeout.tv_usec = (ms % 1000) * 1000;
 }
 
 static void sendEchoToServer(int type, int dataLength)
